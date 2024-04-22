@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Loginpage() {
+function Loginpage({ children }) {
   return (
-    <div>
-      Halaman Login
+    <div className="border h-full flex justify-center items-center">
+      {children}
     </div>
-  )
+  );
 }
 
-export default Loginpage
+export default Loginpage;
