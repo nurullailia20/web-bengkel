@@ -4,31 +4,23 @@ import React from "react";
 function Navbar() {
   const navlinks = [
     {
-      name: "Home",
+      name: "Beranda",
       href: "/",
     },
     {
-      name: "Product",
+      name: "Produk",
       href: "/product",
     },
     {
-      name: "Service",
-      href: "/service",
-    },
-    {
-      name: "About",
+      name: "Tentang Kami",
       href: "/about",
-    },
-    {
-      name: "Login",
-      href: "/login",
     },
   ];
   const router = useRouter();
   return (
     <nav className="w-full h-[60px] border flex justify-between items-center px-6 py-3">
       <div>Bengkel Variasi Mobil</div>
-      <ul className="w-1/2 flex justify-between gap-2 items-center cursor-pointer">
+      <ul className="w-auto flex justify-between gap-5 items-center cursor-pointer">
         {navlinks.map((navlink, index) => (
           <li key={index} onClick={() => router.push(navlink.href)}>
             {navlink.name}
