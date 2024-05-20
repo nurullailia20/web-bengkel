@@ -10,9 +10,9 @@ function Productpage() {
         <ActiveSlider />
       </div>
       <div className="w-[700px] h-[150px] grid grid-cols-3 gap-3">
-        <div className="h-full w-full border"><Image src={mobil}/></div>
-        <div className="h-full w-full border"><Image src={mobil}/></div>
-        <div className="h-full w-full border"><Image src={mobil}/></div>
+        <div className="h-full w-full "><Image src={mobil}/></div>
+        <div className="h-full w-full "><Image src={mobil}/></div>
+        <div className="h-full w-full "><Image src={mobil}/></div>
       </div>
     </div>
   );
